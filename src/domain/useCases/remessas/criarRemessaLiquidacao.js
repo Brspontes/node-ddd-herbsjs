@@ -16,13 +16,13 @@ const criarRemessaLiquidacao = () =>
 
       const request = RemessaLiquidacao.fromJSON({
         fundoInfo: Fundo.fromJSON({
-          cnpj: cnpj,
-          razaoSocial: razaoSocial,
-          nomeFantasia: nomeFantasia
+          cnpj,
+          razaoSocial,
+          nomeFantasia
         }),
-        numeroControleParticipante: numeroControleParticipante,
-        valorLiquidacao: valorLiquidacao
-      }, { allowExtraKeys: true })
+        numeroControleParticipante,
+        valorLiquidacao
+      })
 
       console.log(request)
 
